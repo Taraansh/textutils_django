@@ -3,10 +3,24 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('''<h1>hello world</h1> <a href="https://www.youtube.com/watch?v=AepgWsROO4k&list
-    =PLu0W_9lII9ah7DDtYtflgwMwpT3xmjXY9&index=7">Django Tutorial</a> <br> <a 
-    href="https://www.sololearn.com/learning/1073">SoloLearn</a>''')
+    return HttpResponse("Home")
 
 
-def about(request):
-    return HttpResponse("about me")
+def removepunc(request):
+    return HttpResponse('remove punc <button><a href="/">Back</a></button> ')
+
+
+def capfirst(request):
+    return HttpResponse('capitalize first <button><a href="/">Back</a></button> ')
+
+
+def newlineremove(request):
+    return HttpResponse('new line remove <button><a href="/">Back</a></button> ')
+
+
+def spaceremove(request):
+    return HttpResponse('space remove <button><a href="/">Back</a></button> ')
+
+
+def charcount(request):
+    return HttpResponse('charcount <button><a href="/">Back</a></button> ')
