@@ -9,6 +9,10 @@ def index(request):
 
 
 def removepunc(request):
+    # get the text
+    djtext = request.GET.get('text', 'default')
+    print(djtext)
+    # Analyze the text
     return HttpResponse('remove punc <button><a href="/">Back</a></button> ')
 
 
