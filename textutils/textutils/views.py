@@ -59,3 +59,11 @@ def analyze(request):
 
     else:
         return HttpResponse('Error')
+
+
+def aboutus(request):
+    return render(request, 'aboutus.html')
+
+
+def contactus(request):
+    return render(request, 'contactus.html')
