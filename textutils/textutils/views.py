@@ -54,7 +54,7 @@ def analyze(request):
         params = {'purpose': 'Removed Extra Spaces', 'analyzed_text': analyzed}
         # return render(request, 'analyze.html', params)
 
-    if removepunc != "on" and fullcaps != 'on' and extraspaceremover != 'on' and extraspaceremover != 'on':
+    if removepunc != "on" and fullcaps != 'on' and newlineremover != 'on' and extraspaceremover != 'on':
         return HttpResponse('Error')
 
     return render(request, 'analyze.html', params)
